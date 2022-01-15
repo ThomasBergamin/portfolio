@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <Box as="footer" mt="auto">
       <Container maxW="120ch" py="3" px={4}>
-        <Divider mb={2} w="100%" mx="auto" />
-        <Flex>
+        <Divider mb={3} w="100%" mx="auto" />
+        <Flex mb={1}>
           <Text fontSize="sm" textColor="gray.100">
             Copyright © 2022 - Thomas Bergamin
           </Text>
