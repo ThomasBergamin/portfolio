@@ -11,7 +11,7 @@ import {
 import React from 'react';
 import { Footer } from '../components/Footer/Footer';
 import { Navbar } from '../components/Navbar/Navbar';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsDownload, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Home = () => {
   return (
@@ -70,6 +70,18 @@ const Home = () => {
                 </Button>
               </Link>
             </ButtonGroup>
+            <Link isExternal href="/files/resume_thomas_bergamin.pdf">
+              <Button
+                cursor="pointer"
+                as="a"
+                leftIcon={<BsDownload />}
+                borderRadius="1"
+                textColor="gray.100"
+                colorScheme="green"
+              >
+                Download my resume
+              </Button>
+            </Link>
           </VStack>
         </Box>
       </SlideFade>

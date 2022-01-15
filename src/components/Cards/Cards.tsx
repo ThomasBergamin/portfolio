@@ -8,6 +8,7 @@ import {
   ButtonGroup,
   Link,
 } from '@chakra-ui/react';
+import { FiExternalLink } from 'react-icons/fi';
 
 interface ICard {
   title: string;
@@ -54,6 +55,7 @@ const Card = ({ title, subtitle, src, url, repoUrl }: ICard) => {
         >
           <Link isExternal href={url}>
             <Button
+              leftIcon={<FiExternalLink />}
               py={0}
               fontSize="sm"
               cursor="pointer"
