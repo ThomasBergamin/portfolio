@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Navbar />
 
-      <SlideFade in offsetY="40px">
+      <SlideFade in offsetY="50px">
         <Box as="section" minHeight="70vh">
           <VStack
             alignItems="center"
@@ -31,8 +31,8 @@ const Home = () => {
               Hi ! I&#39;m Thomas
             </Heading>
 
-            <Text as="h2" textColor="gray.500" fontSize="2xl" px={10}>
-              A web{' '}
+            <Text as="h2" textColor="gray.200" fontSize="2xl" px={10}>
+              A full stack web{' '}
               <Text display="inline" color="teal.300">
                 Developer
               </Text>{' '}
