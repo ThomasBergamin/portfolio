@@ -28,10 +28,10 @@ const Home = () => {
             mx={4}
           >
             <Heading as="h1" textColor="gray.100" size="3xl">
-              Hi ! I&#39;m Thomas
+              Hi ! I&#39;m Thomas.
             </Heading>
 
-            <Text as="h2" textColor="gray.200" fontSize="2xl" px={10}>
+            <Text as="h2" textColor="gray.200" fontSize="2xl" pb={8} px={10}>
               A full stack web{' '}
               <Text display="inline" color="teal.300">
                 Developer
@@ -50,7 +50,7 @@ const Home = () => {
                   cursor="pointer"
                   as="a"
                   leftIcon={<BsLinkedin />}
-                  borderRadius="1"
+                  borderRadius="2"
                   colorScheme="blue"
                   textColor="gray.100"
                 >
@@ -62,7 +62,7 @@ const Home = () => {
                   cursor="pointer"
                   as="a"
                   leftIcon={<BsGithub />}
-                  borderRadius="1"
+                  borderRadius="2"
                   textColor="gray.100"
                   colorScheme="teal"
                 >
@@ -75,7 +75,7 @@ const Home = () => {
                 cursor="pointer"
                 as="a"
                 leftIcon={<BsDownload />}
-                borderRadius="1"
+                borderRadius="2"
                 textColor="gray.100"
                 colorScheme="green"
               >

@@ -10,13 +10,15 @@ import {
 import React from 'react';
 
 const Footer = () => {
+  const date = new Date();
+  const actualYear = date.getFullYear();
   return (
     <Box as="footer" mt="auto">
       <Container maxW="120ch" py="3" px={4}>
         <Divider mb={3} w="100%" mx="auto" />
         <Flex mb={1}>
           <Text fontSize="sm" textColor="gray.100">
-            Copyright © 2022 Thomas Bergamin
+            Copyright © {actualYear} Thomas Bergamin
           </Text>
           <Spacer />
           <Link
