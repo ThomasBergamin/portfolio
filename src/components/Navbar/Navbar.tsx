@@ -19,7 +19,7 @@ const Navbar = () => {
         <Flex>
           <Link as={RouterLink} to="/">
             <Button
-              borderRadius="1"
+              borderRadius="md"
               as="a"
               _hover={{
                 cursor: 'pointer',
@@ -28,7 +28,10 @@ const Navbar = () => {
               }}
               textColor="gray.100"
               variant="ghost"
-              colorScheme="blue"
+              backgroundColor={'gray.800'}
+              boxShadow={
+                '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+              }
             >
               Home
             </Button>
@@ -37,7 +40,7 @@ const Navbar = () => {
           <ButtonGroup spacing="2">
             <Link as={RouterLink} to="/projects">
               <Button
-                borderRadius="1"
+                borderRadius="md"
                 as="a"
                 _hover={{
                   cursor: 'pointer',
@@ -46,14 +49,17 @@ const Navbar = () => {
                 }}
                 textColor="gray.100"
                 variant="ghost"
-                colorScheme="blue"
+                backgroundColor={'gray.800'}
+                boxShadow={
+                  '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+                }
               >
                 My projects
               </Button>
             </Link>
             <Link as={RouterLink} to="/about">
               <Button
-                borderRadius="1"
+                borderRadius="md"
                 as="a"
                 _hover={{
                   cursor: 'pointer',
@@ -62,7 +68,10 @@ const Navbar = () => {
                 }}
                 textColor="gray.100"
                 variant="ghost"
-                colorScheme="grey"
+                backgroundColor={'gray.800'}
+                boxShadow={
+                  '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+                }
               >
                 About me
               </Button>

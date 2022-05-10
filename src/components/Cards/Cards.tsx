@@ -60,9 +60,10 @@ const Card = ({ title, subtitle, src, url, repoUrl }: ICard) => {
               fontSize="sm"
               cursor="pointer"
               as="a"
-              borderRadius={2}
+              borderRadius="md"
               colorScheme="teal"
               textColor="gray.100"
+              boxShadow="inset 0 2px 0 hsla(171, 55%, 40%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
             >
               Visit
             </Button>

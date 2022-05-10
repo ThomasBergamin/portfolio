@@ -50,9 +50,10 @@ const Home = () => {
                   cursor="pointer"
                   as="a"
                   leftIcon={<BsLinkedin />}
-                  borderRadius="2"
+                  borderRadius="md"
                   colorScheme="blue"
                   textColor="gray.100"
+                  boxShadow="inset 0 2px 0 hsla(212, 100%, 62%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
                 >
                   LinkedIn
                 </Button>
@@ -62,9 +63,10 @@ const Home = () => {
                   cursor="pointer"
                   as="a"
                   leftIcon={<BsGithub />}
-                  borderRadius="2"
+                  borderRadius="md"
                   textColor="gray.100"
                   colorScheme="teal"
+                  boxShadow="inset 0 2px 0 hsla(171, 75%, 40%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
                 >
                   GitHub
                 </Button>
@@ -75,9 +77,10 @@ const Home = () => {
                 cursor="pointer"
                 as="a"
                 leftIcon={<BsDownload />}
-                borderRadius="2"
+                borderRadius="md"
                 textColor="gray.100"
                 colorScheme="green"
+                boxShadow="inset 0 2px 0 hsla(140, 70%, 42%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
               >
                 Download my resume
               </Button>
