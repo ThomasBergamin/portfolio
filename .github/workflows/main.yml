@@ -24,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: appleboy/ssh-action@master # An action made to control Linux servers
         env:
-          PW: ${{ github.sha }}
+          PW: ${{ secrets.PASSWORD }}
 
         with: # We set all our secrets here for the action, these won't be shown in the action logs
           host: ${{ secrets.HOST }}
