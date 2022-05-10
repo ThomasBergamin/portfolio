@@ -35,4 +35,4 @@ jobs:
             nvm use v14
             yarn
             yarn build 
-            echo "PASSWORD" | sudo -S rsync -a build/ /var/www/portfolio
+            echo "$PASSWORD" | sudo -S rsync -a build/ /var/www/portfolio
