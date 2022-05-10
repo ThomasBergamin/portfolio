@@ -31,8 +31,8 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd portfolio
-            git pull # we pull any changes from git
+            git pull 
             yarn
-            yarn build # we build our app
+            yarn build 
             sudo rsync -a build/ /var/www/portfolio
             "$PASSWORD"
