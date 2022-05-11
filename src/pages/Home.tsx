@@ -4,14 +4,12 @@ import {
   VStack,
   Box,
   Button,
-  ButtonGroup,
   Link,
   SlideFade,
   Stack,
   IconButton,
   Container,
 } from '@chakra-ui/react';
-import React from 'react';
 import { Footer } from '../components/Footer/Footer';
 import { Navbar } from '../components/Navbar/Navbar';
 import { BsDownload, BsGithub, BsLinkedin } from 'react-icons/bs';

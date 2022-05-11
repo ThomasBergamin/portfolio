@@ -8,7 +8,6 @@ import {
   Spacer,
   Link,
 } from '@chakra-ui/react';
-import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
