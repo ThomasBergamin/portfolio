@@ -21,14 +21,16 @@ const Skills = () => {
     <Container as="section" id="about" maxW="70ch" mt={36} px="6">
       <VStack mb={4} gap={{ base: '6', sm: '8' }}>
         <Heading color="whiteAlpha.900">My skills</Heading>
-        <Accordion
-          width="100%"
-          color="whiteAlpha.900"
-          defaultIndex={[0]}
-          allowToggle
-        >
-          <HStack alignItems="baseline" justifyContent="center">
-            <AccordionItem borderWidth="0px" minWidth="400px">
+        <Accordion width="100%" color="whiteAlpha.900" defaultIndex={[0]}>
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
+            alignItems={{ md: 'baseline' }}
+            justifyContent="center"
+          >
+            <AccordionItem
+              borderWidth="0px"
+              minWidth={{ md: '300px ', lg: '400px' }}
+            >
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
@@ -49,7 +51,7 @@ const Skills = () => {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              minWidth="400px"
+              minWidth={{ md: '300px ', lg: '400px' }}
               borderWidth="0px"
               borderBottomWidth="0px !important"
             >
@@ -74,7 +76,7 @@ const Skills = () => {
                 </Stack>
               </AccordionPanel>
             </AccordionItem>
-          </HStack>
+          </Stack>
         </Accordion>
       </VStack>
     </Container>
