@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^1.7.4",
+    "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@testing-library/jest-dom": "^5.16.1",
@@ -12,7 +12,7 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "eslint": "^8.6.0",
-    "framer-motion": "^5",
+    "framer-motion": "^6",
     "git-cz": "^4.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
