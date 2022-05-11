@@ -4,6 +4,7 @@ import { Navbar } from '../components/Navbar/Navbar';
 
 import Main from './sections/Main';
 import AboutMe from './sections/AboutMe';
+import Skills from './sections/Skills';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Main />
       </SlideFade>
       <AboutMe />
+      <Skills />
       <Footer />
     </>
   );

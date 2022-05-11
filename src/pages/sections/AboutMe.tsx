@@ -5,12 +5,16 @@ import {
   Button,
   Link,
   Text,
+  Stat,
+  StatHelpText,
+  StatNumber,
+  Stack,
 } from '@chakra-ui/react';
 import { BsDownload } from 'react-icons/bs';
 
 const AboutMe = () => {
   return (
-    <Container as="section" id="about" maxW="70ch" px="6">
+    <Container as="section" id="about" maxW="70ch" px="6" pt={16}>
       <VStack mb={4} gap={{ base: '6', sm: '8' }}>
         <Heading color="whiteAlpha.900">About Me</Heading>
         <VStack alignItems="left" justifyContent="center">
@@ -29,6 +33,18 @@ const AboutMe = () => {
             download it !
           </Text>
         </VStack>
+        <Stack direction={{ base: 'row' }}>
+          <Stat color="whiteAlpha.900">
+            <StatNumber>01+</StatNumber>
+            <StatHelpText>Year of experience</StatHelpText>
+          </Stat>
+          <Stat color="whiteAlpha.900">
+            <StatNumber>06+</StatNumber>
+            <StatHelpText>
+              Professional projects made during my studies
+            </StatHelpText>
+          </Stat>
+        </Stack>
         <Link isExternal href="/files/resume_thomas_bergamin.pdf">
           <Button
             size="lg"
@@ -36,7 +52,7 @@ const AboutMe = () => {
             as="a"
             rightIcon={<BsDownload />}
             borderRadius="3xl"
-            textColor="whiteAlpha.900"
+            textColor="white"
             colorScheme="green"
             boxShadow="inset 0 2px 0 hsla(140, 70%, 60%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
           >

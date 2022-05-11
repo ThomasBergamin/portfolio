@@ -12,9 +12,15 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <Box as="header">
+    <Box
+      as="header"
+      position="sticky"
+      top="0"
+      backgroundColor="gray.700"
+      zIndex="1"
+    >
       <Box h="5px" bg="teal.500" />
-      <Container maxW="120ch" py="3">
+      <Container maxW="120ch" pt="3">
         <Flex>
           <Link as={RouterLink} to="/">
             <Button

@@ -98,7 +98,7 @@ const Main = () => {
                 <Text display="inline" color="teal.300">
                   React
                 </Text>
-                {' & '}
+                {' / '}
                 <Text display="inline" color="teal.300">
                   Typescript{' '}
                 </Text>
@@ -106,7 +106,7 @@ const Main = () => {
                 <Text display="inline" color="teal.300">
                   Node.js
                 </Text>
-                {' & '}
+                {' / '}
                 <Text display="inline" color="teal.300">
                   Express
                 </Text>
@@ -146,7 +146,11 @@ const Main = () => {
           color="whiteAlpha.900"
           leftIcon={<BsMouse />}
           rightIcon={<ArrowDownIcon />}
-          _hover={{ color: 'teal.500', transform: 'translateY(0.25rem)' }}
+          _hover={{
+            cursor: 'pointer',
+            color: 'teal.500',
+            transform: 'translateY(0.25rem)',
+          }}
           _active={{ backgroundColor: 'gray.900' }}
         >
           Scroll Down
