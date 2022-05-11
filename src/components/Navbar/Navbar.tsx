@@ -18,7 +18,7 @@ const Navbar = () => {
         <Flex>
           <Link as={RouterLink} to="/">
             <Button
-              borderRadius="md"
+              borderRadius="3xl"
               as="a"
               _hover={{
                 cursor: 'pointer',
@@ -39,7 +39,7 @@ const Navbar = () => {
           <ButtonGroup spacing="2">
             <Link as={RouterLink} to="/projects">
               <Button
-                borderRadius="md"
+                borderRadius="3xl"
                 as="a"
                 _hover={{
                   cursor: 'pointer',
@@ -58,7 +58,7 @@ const Navbar = () => {
             </Link>
             <Link as={RouterLink} to="/about">
               <Button
-                borderRadius="md"
+                borderRadius="3xl"
                 as="a"
                 _hover={{
                   cursor: 'pointer',

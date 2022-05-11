@@ -49,7 +49,7 @@ const Card = ({ title, subtitle, src, url, repoUrl }: ICard) => {
           px={4}
           py={3}
           bg="gray.900"
-          roundedBottom="1"
+          roundedBottom="2"
           w="100%"
         >
           <Link isExternal href={url}>
@@ -59,7 +59,7 @@ const Card = ({ title, subtitle, src, url, repoUrl }: ICard) => {
               fontSize="sm"
               cursor="pointer"
               as="a"
-              borderRadius="md"
+              borderRadius="3xl"
               colorScheme="teal"
               textColor="gray.100"
               boxShadow="inset 0 2px 0 hsla(171, 55%, 40%, .9),  0 2px 2px hsla(0, 0%, 0%, 0.5)"
@@ -73,7 +73,7 @@ const Card = ({ title, subtitle, src, url, repoUrl }: ICard) => {
                 fontSize="sm"
                 cursor="pointer"
                 as="a"
-                borderRadius={2}
+                borderRadius="3xl"
                 textColor="gray.100"
                 variant="ghost"
                 colorScheme="teal"
