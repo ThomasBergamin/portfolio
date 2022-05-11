@@ -6,9 +6,7 @@ import {
   Divider,
   Flex,
   Spacer,
-  Link,
 } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -22,10 +20,40 @@ const Navbar = () => {
       <Box h="5px" bg="teal.500" />
       <Container maxW="120ch" pt="3">
         <Flex>
-          <Link as={RouterLink} to="/">
+          <Button
+            borderRadius="3xl"
+            as="a"
+            onClick={() => {
+              window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            }}
+            _hover={{
+              cursor: 'pointer',
+              background: 'white',
+              color: 'teal.500',
+            }}
+            textColor="gray.100"
+            variant="ghost"
+            backgroundColor={'gray.800'}
+            boxShadow={
+              '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+            }
+          >
+            Home
+          </Button>
+
+          <Spacer />
+          <ButtonGroup spacing="2">
             <Button
               borderRadius="3xl"
               as="a"
+              onClick={() => {
+                const about = document.getElementById('about');
+                about &&
+                  about.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+              }}
               _hover={{
                 cursor: 'pointer',
                 background: 'white',
@@ -38,49 +66,33 @@ const Navbar = () => {
                 '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
               }
             >
-              Home
+              About me
             </Button>
-          </Link>
-          <Spacer />
-          <ButtonGroup spacing="2">
-            <Link as={RouterLink} to="/projects">
-              <Button
-                borderRadius="3xl"
-                as="a"
-                _hover={{
-                  cursor: 'pointer',
-                  background: 'white',
-                  color: 'teal.500',
-                }}
-                textColor="gray.100"
-                variant="ghost"
-                backgroundColor={'gray.800'}
-                boxShadow={
-                  '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
-                }
-              >
-                My projects
-              </Button>
-            </Link>
-            <Link as={RouterLink} to="/about">
-              <Button
-                borderRadius="3xl"
-                as="a"
-                _hover={{
-                  cursor: 'pointer',
-                  background: 'white',
-                  color: 'teal.500',
-                }}
-                textColor="gray.100"
-                variant="ghost"
-                backgroundColor={'gray.800'}
-                boxShadow={
-                  '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
-                }
-              >
-                About me
-              </Button>
-            </Link>
+            <Button
+              borderRadius="3xl"
+              as="a"
+              onClick={() => {
+                const skills = document.getElementById('skills');
+                skills &&
+                  skills.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+              }}
+              _hover={{
+                cursor: 'pointer',
+                background: 'white',
+                color: 'teal.500',
+              }}
+              textColor="gray.100"
+              variant="ghost"
+              backgroundColor={'gray.800'}
+              boxShadow={
+                '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+              }
+            >
+              My Skills
+            </Button>
           </ButtonGroup>
         </Flex>
         <Divider mt={2} w="100%" mx="auto" />

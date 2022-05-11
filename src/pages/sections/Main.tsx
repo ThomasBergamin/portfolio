@@ -136,9 +136,8 @@ const Main = () => {
         <Button
           display={{ base: 'none', md: 'block' }}
           as="a"
-          onClick={(e) => {
+          onClick={() => {
             const about = document.getElementById('about');
-            e.preventDefault(); // Stop Page Reloading
             about &&
               about.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }}

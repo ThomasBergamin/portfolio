@@ -7,18 +7,15 @@ import {
   Box,
   Container,
   Heading,
-  HStack,
   Text,
-  Progress,
   VStack,
-  Spacer,
   Stack,
 } from '@chakra-ui/react';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 
 const Skills = () => {
   return (
-    <Container as="section" id="about" maxW="70ch" mt={36} px="6">
+    <Container as="section" id="skills" maxW="70ch" mt={36} px="6">
       <VStack mb={4} gap={{ base: '6', sm: '8' }}>
         <Heading color="whiteAlpha.900">My skills</Heading>
         <Accordion width="100%" color="whiteAlpha.900" defaultIndex={[0]}>
