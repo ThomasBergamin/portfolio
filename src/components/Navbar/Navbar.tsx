@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <Box as="header">
       <Box h="5px" bg="teal.500" />
-      <Container maxW="120ch" py="3" px={4}>
+      <Container maxW="120ch" py="3">
         <Flex>
           <Link as={RouterLink} to="/">
             <Button
