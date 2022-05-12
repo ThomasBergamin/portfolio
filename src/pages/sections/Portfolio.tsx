@@ -30,7 +30,7 @@ const Portfolio = () => {
               title="Reservia"
               src="/img/reservia.jpg"
               url="https://reservia.thomasbergamin.com"
-              subtitle="First OpenClassrooms project, integration of a model using HTML and CSS"
+              subtitle="Project #1 : Integration of a model using HTML and CSS"
               repoUrl="https://github.com/ThomasBergamin/ThomasBergamin_2_16042021"
             />
           </SwiperSlide>
@@ -39,7 +39,7 @@ const Portfolio = () => {
               title="Oh My Food"
               url="https://ohmyfood.thomasbergamin.com"
               src="/img/ohmyfood.jpg"
-              subtitle="Second OpenClassrooms project, discovery of Sass"
+              subtitle="Project #2 : Integration of a model in HTML and Sass"
               repoUrl="https://github.com/ThomasBergamin/ThomasBergamin_3_24052021"
             />
           </SwiperSlide>
@@ -48,7 +48,7 @@ const Portfolio = () => {
               title="Orinoco"
               src="/img/orinoco.jpg"
               url="https://orinoco.thomasbergamin.com"
-              subtitle="Third OpenClassrooms project, usage of JavaScript to make async calls to an API"
+              subtitle="Project #3, usage of JavaScript to make async calls to an API"
               repoUrl="https://github.com/ThomasBergamin/ThomasBergamin_5_10072021"
             />
           </SwiperSlide>
@@ -57,7 +57,7 @@ const Portfolio = () => {
               title="Groupomania"
               src="/img/groupomania.png"
               url="https://groupomania.thomasbergamin.com"
-              subtitle="Final OpenClassrooms project, React + Tailwind / Node + Express"
+              subtitle="Final project, React + Tailwind & Node + Express"
               repoUrl="https://github.com/ThomasBergamin/grouporama"
             />
           </SwiperSlide>
