@@ -15,7 +15,7 @@ const Navbar = () => {
       position="sticky"
       top="0"
       backgroundColor="gray.700"
-      zIndex="1"
+      zIndex="2"
     >
       <Box h="5px" bg="teal.500" />
       <Container maxW="120ch" pt="3">
@@ -92,6 +92,56 @@ const Navbar = () => {
               }
             >
               My Skills
+            </Button>
+            <Button
+              borderRadius="3xl"
+              as="a"
+              onClick={() => {
+                const qualification = document.getElementById('qualification');
+                qualification &&
+                  qualification.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+              }}
+              _hover={{
+                cursor: 'pointer',
+                background: 'white',
+                color: 'teal.500',
+              }}
+              textColor="gray.100"
+              variant="ghost"
+              backgroundColor={'gray.800'}
+              boxShadow={
+                '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+              }
+            >
+              My journey
+            </Button>
+            <Button
+              borderRadius="3xl"
+              as="a"
+              onClick={() => {
+                const portfolio = document.getElementById('portfolio');
+                portfolio &&
+                  portfolio.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+              }}
+              _hover={{
+                cursor: 'pointer',
+                background: 'white',
+                color: 'teal.500',
+              }}
+              textColor="gray.100"
+              variant="ghost"
+              backgroundColor={'gray.800'}
+              boxShadow={
+                '0 1px 0 hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 0%, 0.5)'
+              }
+            >
+              Portfolio
             </Button>
           </ButtonGroup>
         </Flex>

@@ -1,0 +1,13 @@
+.swiper-button-next {
+  color: var(--chakra-colors-teal-300) !important;
+}
+
+.swiper-button-prev {
+  color: var(--chakra-colors-teal-300) !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: var(--chakra-colors-teal-200) !important;
+}

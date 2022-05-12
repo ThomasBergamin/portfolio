@@ -14,7 +14,7 @@ import { BsDownload } from 'react-icons/bs';
 
 const AboutMe = () => {
   return (
-    <Container as="section" id="about" maxW="70ch" px="6" pt={16}>
+    <Container as="section" id="about" maxW="70ch" px="6" pt={24}>
       <VStack mb={4} gap={{ base: '6', sm: '8' }}>
         <Heading color="whiteAlpha.900">About Me</Heading>
         <VStack alignItems="left" justifyContent="center">

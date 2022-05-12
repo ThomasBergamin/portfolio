@@ -5,6 +5,9 @@ import { Navbar } from '../components/Navbar/Navbar';
 import Main from './sections/Main';
 import AboutMe from './sections/AboutMe';
 import Skills from './sections/Skills';
+import Qualification from './sections/Qualification';
+import Portfolio from './sections/Portfolio';
+import ScrollUp from '../components/ScrollUp/ScrollUp';
 
 const Home = () => {
   return (
@@ -15,7 +18,10 @@ const Home = () => {
       </SlideFade>
       <AboutMe />
       <Skills />
+      <Qualification />
+      <Portfolio />
       <Footer />
+      <ScrollUp />
     </>
   );
 };
