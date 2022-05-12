@@ -1,4 +1,4 @@
-import { SlideFade } from '@chakra-ui/react';
+import { SlideFade, useMediaQuery } from '@chakra-ui/react';
 import { Footer } from '../components/Footer/Footer';
 import { Navbar } from '../components/Navbar/Navbar';
 
@@ -8,12 +8,14 @@ import Skills from './sections/Skills';
 import Qualification from './sections/Qualification';
 import Portfolio from './sections/Portfolio';
 import ScrollUp from '../components/ScrollUp/ScrollUp';
-import MobileDrawer from '../components/MobileDrawer/MobileDrawer';
+import MobileDrawerContainer from '../components/MobileDrawer/MobileDrawerContainer';
 
 const Home = () => {
+  const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
   return (
     <>
-      <Navbar />
+      {isLargerThan768 ? <Navbar /> : <MobileDrawerContainer />}
+
       <SlideFade in offsetY="50px">
         <Main />
       </SlideFade>
@@ -23,7 +25,6 @@ const Home = () => {
       <Portfolio />
       <Footer />
       <ScrollUp />
-      <MobileDrawer />
     </>
   );
 };

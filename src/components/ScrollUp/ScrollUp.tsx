@@ -15,9 +15,8 @@ const ScrollUp = () => {
   return (
     <Button
       position="fixed"
-      size="lg"
       right="2rem"
-      bottom={offset < 450 ? '-20%' : '5rem'}
+      bottom={offset < 450 ? '-20%' : '6rem'}
       colorScheme="green"
       borderRadius="full"
       padding="0 .3rem"

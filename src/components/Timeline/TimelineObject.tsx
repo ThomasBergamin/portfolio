@@ -25,8 +25,6 @@ const TimelineObject = ({
         pl={isLargerThan768 ? '30px' : '70px'}
         pr={isLargerThan768 ? '30px' : '25px'}
         left={isLargerThan768 ? (position === 'left' ? 0 : '50%') : '0'}
-        /* left={isLargerThan768 ? (position === 'left' ? '171px' : '0px') : ' 0'} */
-
         _after={{
           content: `''`,
           position: 'absolute',
