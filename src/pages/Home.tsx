@@ -8,6 +8,7 @@ import Skills from './sections/Skills';
 import Qualification from './sections/Qualification';
 import Portfolio from './sections/Portfolio';
 import ScrollUp from '../components/ScrollUp/ScrollUp';
+import MobileDrawer from '../components/MobileDrawer/MobileDrawer';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Portfolio />
       <Footer />
       <ScrollUp />
+      <MobileDrawer />
     </>
   );
 };

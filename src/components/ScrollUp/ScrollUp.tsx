@@ -12,7 +12,6 @@ const ScrollUp = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  console.log(offset);
   return (
     <Button
       position="fixed"
